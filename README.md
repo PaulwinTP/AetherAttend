@@ -71,5 +71,45 @@ graph TD
     I -->|Log Check-in| K[CSV Attendance Register]:::storage
     I -->|Update Overlay Coordinates| B
     J -->|Update Visual Box| B
+```
+
+---
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+* **Python 3.10 or higher**
+* **C++ Build Tools** *(required for compiling dlib)*:
+  * **Windows**: [Visual Studio C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+  * **Linux/macOS**: `gcc` / `g++` and `cmake`
+
+### Step-by-Step Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/PaulwinTP/AetherAttend.git](https://github.com/PaulwinTP/AetherAttend.git)
+   cd AetherAttend
+   Create a virtual environment (Recommended):
+
+Bash
+python -m venv venv
+
+# On Windows:
+venv\Scripts\activate
+
+# On macOS/Linux:
+source venv/bin/activate
+Install dependencies:
+
+Bash
+pip install -r requirements.txt
+Launch the Application:
+
+Bash
+python main.py
+Default Admin Credentials: admin123
+
+
+📚 Libraries & External Repositories UsedThis project stands on the shoulders of incredible open-source tools and deep learning libraries:Library / RepositoryDescriptionUsage in AetherAttenddlibModern C++ toolkit containing machine learning algorithms.Provides the core HOG face detector and the pretrained ResNet model for generating 128-dimensional facial vector embeddings.face_recognitionPython wrapper for dlib's face recognition tools.Simplifies matrix distance measurements and bounding box localization.OpenCVOpen Source Computer Vision Library.Handles high-speed camera frame capturing, color format conversions (BGR to RGB), and visual overlay rendering.Pillow (PIL)Python Imaging Library.Manages dynamic image resizing and preview loading inside the Tkinter canvas UI.
 
 
