@@ -89,7 +89,6 @@ graph TD
    ```bash
    git clone [https://github.com/PaulwinTP/AetherAttend.git](https://github.com/PaulwinTP/AetherAttend.git)
    cd AetherAttend
-   Create a virtual environment (Recommended):
 
 Bash
 python -m venv venv
@@ -99,17 +98,54 @@ venv\Scripts\activate
 
 # On macOS/Linux:
 source venv/bin/activate
+
 Install dependencies:
 
 Bash
 pip install -r requirements.txt
+
 Launch the Application:
 
 Bash
 python main.py
+
 Default Admin Credentials: admin123
 
 
-📚 Libraries & External Repositories UsedThis project stands on the shoulders of incredible open-source tools and deep learning libraries:Library / RepositoryDescriptionUsage in AetherAttenddlibModern C++ toolkit containing machine learning algorithms.Provides the core HOG face detector and the pretrained ResNet model for generating 128-dimensional facial vector embeddings.face_recognitionPython wrapper for dlib's face recognition tools.Simplifies matrix distance measurements and bounding box localization.OpenCVOpen Source Computer Vision Library.Handles high-speed camera frame capturing, color format conversions (BGR to RGB), and visual overlay rendering.Pillow (PIL)Python Imaging Library.Manages dynamic image resizing and preview loading inside the Tkinter canvas UI.
+---
 
+## 📚 Libraries & External Repositories Used
+
+This project stands on the shoulders of incredible open-source tools and deep learning libraries:
+
+| Library / Repository | Description | Usage in AetherAttend |
+| :--- | :--- | :--- |
+| **[dlib](https://github.com/davisking/dlib)** | Modern C++ toolkit containing machine learning algorithms. | Provides the core HOG face detector and the pretrained ResNet model for generating 128-dimensional facial vector embeddings. |
+| **[face_recognition](https://github.com/ageitgey/face_recognition)** | Python wrapper for `dlib`'s face recognition tools. | Simplifies matrix distance measurements and bounding box localization. |
+| **[OpenCV](https://github.com/opencv/opencv)** | Open Source Computer Vision Library. | Handles high-speed camera frame capturing, color format conversions (BGR to RGB), and visual overlay rendering. |
+| **[Pillow (PIL)](https://python-pillow.org/)** | Python Imaging Library. | Manages dynamic image resizing and preview loading inside the Tkinter canvas UI. |
+
+📄 License
+Distributed under the MIT License. See LICENSE for more information.
+
+---
+
+## 🎓 Academic Context & Author
+
+<div align="center">
+
+### **Paulwin TP**
+*B.Tech Student | Developer & Computer Vision Enthusiast*
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PaulwinTP)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/paulwin-t-p)
+
+---
+
+### 🏛️ Project Credits
+* **Course / Subject:** S2 B.Tech — IPR (Innovation & Project Realization) Course Project
+* **Project Name:** AetherAttend — Deep Learning Face Recognition Attendance System
+* **Core Focus:** Real-time multi-threading, deep learning embeddings, and automated tracking.
+
+</div>
 
