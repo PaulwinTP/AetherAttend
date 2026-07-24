@@ -1,0 +1,15 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Local data & logs (protect sensitive data)
+students.json
+*.csv
+dataset/
+data/
+
+# Environment settings
+.venv/
+env/
+.vscode/
+.idea/
