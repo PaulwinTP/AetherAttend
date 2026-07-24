@@ -21,8 +21,15 @@
 
 > **Interface Design:** Built with a modern slate-blue Tkinter theme, featuring real-time bounding box overlays, active frame statistics, and an administrative control panel.
 
-*(Tip: Add a GIF or screenshot of your running application here! Save it as `assets/demo.png` and replace this line)*
+<div align="center">
+  <img src="assets/demo.gif" alt="AetherAttend Live Demo" width="700"/>
+  <p><i>Real-time 60 FPS face recognition and bounding box overlays</i></p>
+</div>
 
+### System Screenshots
+| Enrollment Wizard | Admin Directory Explorer |
+| :---: | :---: |
+| <img src="assets/1.png" width="400"/> | <img src="assets/2.png" width="400"/> |<img src="assets/3.png" width="400"/> |<img src="assets/4.png" width="400"/> |<img src="assets/5.png" width="400"/> |<img src="assets/5.png" width="400"/> |<img src="assets/6.png" width="400"/> |
 ---
 
 ## 🚀 Key Features & Technical Innovations
