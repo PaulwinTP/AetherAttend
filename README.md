@@ -86,23 +86,23 @@ graph TD
 ### Step-by-Step Setup
 
 1. **Clone the repository:**
-   ```bash
+   ```Bash
    git clone https://github.com/PaulwinTP/AetherAttend.git
    cd AetherAttend
 
 
-Install dependencies:
+2. **Install dependencies:**
 
-2. Bash
+  ```Bash
 pip install -r requirements.txt
+ ```
+3. **Launch the Application:**
 
-Launch the Application:
-
-3. Bash
+ ```Bash
 python main.py
-
-Default Admin Credentials: admin123
-
+ ```
+***Default Admin Credentials: admin123***
+ 
 
 ---
 
