@@ -27,8 +27,8 @@
 </div>
 
 ### System Screenshots
-| Enrollment Wizard | Admin Directory Explorer |
-| :---: | :---: |
+| MAIN SCREEN | VERIFICATION SCREEN| REGISTRATION WIZARD| REGISTERED DATA | LIVE PREVIEW | ATTENDANCE LOG|
+| :---: | :---: |  :---: |  :---: |  :---: |  :---: |
 | <img src="assets/1.png" width="400"/> | <img src="assets/2.png" width="400"/> |<img src="assets/3.png" width="400"/> |<img src="assets/4.png" width="400"/> |<img src="assets/5.png" width="400"/> |<img src="assets/5.png" width="400"/> |<img src="assets/6.png" width="400"/> |
 ---
 
