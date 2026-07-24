@@ -48,6 +48,7 @@ To ensure high recognition accuracy across head tilts and rotations, students en
 ---
 
 ## 📐 System Architecture & Data Flow
+
 ```mermaid
 graph TD
     classDef hardware fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
@@ -70,19 +71,5 @@ graph TD
     I -->|Log Check-in| K[CSV Attendance Register]:::storage
     I -->|Update Overlay Coordinates| B
     J -->|Update Visual Box| B
----
 
-## Installation & Setup
 
-### Prerequisites
-* **Python 3.10 or higher**
-* **C++ Build Tools** *(required for compiling dlib)*:
-  * **Windows**: [Visual Studio C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
-  * **Linux/macOS**: `gcc` / `g++` and `cmake`
-
-### Step-by-Step Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/PaulwinTP/AetherAttend.git](https://github.com/PaulwinTP/AetherAttend.git)
-   cd AetherAttend
