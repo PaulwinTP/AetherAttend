@@ -72,7 +72,7 @@ graph TD
     J -->|Update Visual Box| B
 ---
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 * **Python 3.10 or higher**
