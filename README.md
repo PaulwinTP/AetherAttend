@@ -48,17 +48,15 @@ To ensure high recognition accuracy across head tilts and rotations, students en
 ---
 
 ## 📐 System Architecture & Data Flow
-
 ```mermaid
 graph TD
-    %% Node Styling
     classDef hardware fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#fff
     classDef process fill:#0f172a,stroke:#8b5cf6,stroke-width:2px,color:#fff
     classDef ai fill:#312e81,stroke:#6366f1,stroke-width:2px,color:#fff
     classDef storage fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#fff
 
-    A[📷 Webcam Feed]:::hardware -->|Raw Frames ~60 FPS| B(UI Thread):::process
-    B -->|Render UI Display| C[💻 Tkinter Canvas]:::hardware
+    A[Webcam Feed]:::hardware -->|Raw Frames ~60 FPS| B(UI Thread):::process
+    B -->|Render UI Display| C[Tkinter Canvas]:::hardware
     B -->|Cache Active Frame| D{Thread Queue}:::process
     D -->|Asynchronous Copy| E(Recognition Thread):::process
     
@@ -66,20 +64,25 @@ graph TD
     F -->|128-D Vector Extraction| G[ResNet Model]:::ai
     G -->|Euclidean Distance Comparison| H{Match Cached Encodings}:::ai
     
-    H -->|Distance < 0.55| I[Recognized Profile]:::storage
-    H -->|Distance >= 0.55| J[Unknown Face]:::process
+    H -->|Distance less than 0.55| I[Recognized Profile]:::storage
+    H -->|Distance 0.55 or more| J[Unknown Face]:::process
     
-    I -->|Log Check-in| K[(CSV Attendance Register)]:::storage
+    I -->|Log Check-in| K[CSV Attendance Register]:::storage
     I -->|Update Overlay Coordinates| B
     J -->|Update Visual Box| B
+---
 
+## 🛠️ Installation & Setup
 
-🛠️ Installation & Setup
-Prerequisites
-Python 3.10 or higher
+### Prerequisites
+* **Python 3.10 or higher**
+* **C++ Build Tools** *(required for compiling dlib)*:
+  * **Windows**: [Visual Studio C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+  * **Linux/macOS**: `gcc` / `g++` and `cmake`
 
-C++ Build Tools (required for compiling dlib)
+### Step-by-Step Setup
 
-Windows: Visual Studio C++ Build Tools
-
-Linux/macOS: gcc / g++ and cmake
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/PaulwinTP/AetherAttend.git](https://github.com/PaulwinTP/AetherAttend.git)
+   cd AetherAttend
