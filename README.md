@@ -87,26 +87,18 @@ graph TD
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/PaulwinTP/AetherAttend.git](https://github.com/PaulwinTP/AetherAttend.git)
+   git clone https://github.com/PaulwinTP/AetherAttend.git
    cd AetherAttend
 
-Bash
-python -m venv venv
-
-# On Windows:
-venv\Scripts\activate
-
-# On macOS/Linux:
-source venv/bin/activate
 
 Install dependencies:
 
-Bash
+2. Bash
 pip install -r requirements.txt
 
 Launch the Application:
 
-Bash
+3. Bash
 python main.py
 
 Default Admin Credentials: admin123
